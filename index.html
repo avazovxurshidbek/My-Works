@@ -5,11 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work</title>
+    <link rel="icon" href="img/bootstrap.png">
 
     <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+  
+    <!-- Navigation -->
+    <div class="container">
+        <nav class="navbar-expand-lg nav-position">
+            <div class="container-fluid d-flex flex-wrap justify-content-between">
+              <a class="logo" href="#">
+                  <img class="logo__img" src="img/logo.svg" alt="">
+              </a>
+              <button class="navbar-toggler nav__btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse nav-max" id="navbarNav">
+                <ul class="navbar-nav nav__menu">
+                  <li class="nav-item">
+                    <a class="nav__link active" aria-current="page" href="#">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__link" href="#">Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__link" href="#">to order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav__link" href="tel:998901161221">
+                        <i class="fal fa-phone-square-alt"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <!-- Slider -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex">
+
+                    <div class="col-6 d-flex flex-column align-items-end">
+
+                        <div class="carousel__info">
+                            <h3 class="carousel__title">My beginning</h3>
+                            <h2 class="title">Self-development and training in the training center</h2>
+                            <a href="#!" class="button">GET STARTED NOW</a>
+                        </div>
+
+                        <div class="carousel__brands">
+                            <div class="carousel__brands-item">
+                                <img src="img/html.png" alt="html" class="carousel__brands-img">
+                                <p class="carousel__brands-text">HTML</p>
+                            </div>
+                            <div class="carousel__brands-item">
+                                <img src="img/css.png" alt="css" class="carousel__brands-img">
+                                <p class="carousel__brands-text">CSS</p>
+                            </div>
+                            <div class="carousel__brands-item">
+                                <img src="img/bootstrap.png" alt="bootstrap" class="carousel__brands-img">
+                                <p class="carousel__brands-text">bootstrap 5</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <img src="img/slider.png" alt="slider" class="carousel__img">
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+            
+          </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

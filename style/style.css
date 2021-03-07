@@ -5,5 +5,118 @@
     --f900: 'R900';
     --fi700: 'RI700';
     --fs700: 'RS700';
+    --m-color: #7177F1;
+    --dark: #323232;
+    --light: #ffffff;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    color: var(--m-color);
+    font-family: var(--fs700);
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.button {
+    background: var(--m-color);
+    color: var(--light);
+    border-radius: 8px;
+    padding: 12px 58px;
+    display: inline-block;
+    font-family: var(--f400);
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    color: var(--light);
+}
+
+
+/* nav */
+
+.nav-max {
+    width: max-content;
+}
+
+.nav-position {
+    padding: 18px 0 17px;
+}
+
+.nav__link {
+    display: inline-block;
+    font-family: var(--f400);
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: color 250ms, background 250ms;
+}
+
+.nav__link:hover {
+    background: var(--m-color);
+    color: var(--light);
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+}
+
+.nav__menu {
+    align-items: center;
+}
+
+/* slider */
+
+.carousel [data-target] {
+    background: #828282;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-radius: 50%;
+}
+
+.carousel [data-target].active {
+    background: var(--m-color);
+}
+
+.carousel__info {
+    max-width: 520px;
+}
+
+.carousel__brands {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* media */
+
+@media (max-width: 991px) {
+    .nav-max {
+        width: 100%;
+    } 
+
+    .nav__menu {
+        align-items: flex-end;
+        padding-top: 20px;
+    }
+
+    .nav__btn {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 330px) {
+    .logo {
+        max-width: 200px;
+    }
+}
