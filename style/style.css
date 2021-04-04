@@ -10,6 +10,10 @@
     --light: #ffffff;
 }
 
+body {
+    background: url(../img/bg.png);
+}
+
 ul {
     list-style: none;
 }
@@ -23,6 +27,7 @@ a {
     font-family: var(--fs700);
     font-size: 40px;
     line-height: 50px;
+    text-transform: capitalize;
 }
 
 .button {
@@ -98,12 +103,195 @@ a {
     margin-top: 50px;
 }
 
+.carousel {
+    padding: 30px 0 81px;
+    margin-bottom: 77px;
+}
+
+.carousel__title {
+    font-size: 24px;
+    line-height: 22px;
+    font-family: var(--fs700);
+    margin-bottom: 10px;
+}
+
+.carousel__btn {
+    margin: auto;
+    display: block;
+    width: max-content;
+    margin-top: 25px;
+}
+
+.carousel__brands-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel__brands-text {
+    margin-top: 15px;
+    color: #7177F1;
+    font-family: var(--f900);
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+/* Info */
+
+.info__img {
+    margin: auto;
+    display: block;
+}
+
+.info__btn {
+    box-shadow: 0px 0px 20px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    padding: 24px 30px 23px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--f400);
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 14px;
+}
+
+.info__target {
+    position: absolute;
+}
+
+.info__rate {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0FDAC2;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    color: #ffffff;
+    font-family: var(--fi700);
+}
+
+.info__article {
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 28px 30px;
+}
+
+.info__text {
+    font-family: var(--f400);
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    margin: 25px 0;
+}
+
+.info__text:last-of-type {
+    margin: 0 0 20px;
+}
+
+/* Capabilities */
+
+.capabilities {
+    padding: 92px 0 60px;
+}
+
+.capabilities__inner  {
+    margin-top: 45px;
+}
+
+.accordion_position {
+    margin-right: 30px;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+}
+
+.card__btn {
+    padding: 15px 10px;
+    background: var(--m-color);
+    border-radius: 0;
+}
+
+.card_radius:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+.card_radius:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+.card__btn.collapsed{
+    background: var(--light);
+}
+
+.btn__icon {
+    font-size: 25px;
+    color: var(--light);
+}
+
+.card:nth-of-type(1) .card__btn.collapsed .btn__icon {
+    color: #E44F26;
+}
+
+.card:nth-of-type(2) .card__btn.collapsed .btn__icon {
+    color: #1572B6;
+}
+
+.card:nth-of-type(3) .card__btn.collapsed .btn__icon {
+    color: #7177F1;
+}
+
+.btn__text {
+    color: var(--light);
+    font-family: var(--f900);
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 20px;
+}
+
+.card__btn.collapsed .btn__text {
+    color: var(--m-color)
+}
+
+.card__btn.collapsed .btn__dropdown {
+    color: var(--m-color);
+    transform: rotate(-180deg);
+}
+
+.btn__dropdown {
+    color: var(--light);
+    transition: 500ms;
+}
+
+.card__body {
+    background: var(--m-color);
+    padding: 9px 30px 55px;
+    color: var(--light);
+    font-size: 18px;
+    line-height: 27px;
+    font-family: var(--f400);
+}
+
+.capabilities__img {
+    width: 100%;
+    object-fit: cover;
+}
+
 /* media */
+
+@media (max-width: 1199px) {
+    .info__article {
+        margin-top: 15px;
+    }
+}
 
 @media (max-width: 991px) {
     .nav-max {
         width: 100%;
-    } 
+    }
 
     .nav__menu {
         align-items: flex-end;
@@ -112,6 +300,45 @@ a {
 
     .nav__btn {
         margin-right: 8px;
+    }
+
+    .carousel__wrap {
+        align-items: center !important;
+    }
+
+    .accordion_position {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel__brands {
+        display: none;
+    }
+
+    .carousel__img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel__wrap {
+        order: 1;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .button {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .info__text {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
